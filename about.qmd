@@ -1,0 +1,9 @@
+---
+title: "Anoj Khadka"
+
+about:
+  template: trestles
+  image: MantraGarland.jpg
+---
+
+Hi, I am Anoj and have special interest in physics, applied mathematics and computing. Besides academia, I love to walk though the wilderness and explore nature. Don't ask me if I am interested in music, it is in my blood. In this personal website of mine I will write on topics of my above mentioned interests.

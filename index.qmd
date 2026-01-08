@@ -1,0 +1,25 @@
+---
+title: "Anoj Khadka"
+image: Manjushri.jpg
+about:
+   template: trestles
+   links:
+    - text: GitHub
+      icon: github
+      url: "https://github.com/anojkhadka"
+    
+
+comments: false
+---
+
+::: column-page
+## Bio
+
+Just like the music is written and understood by musicians in a coded language, what is the language with which natural laws are written. Physicists claim - it is laws of phsyics condensed as an elegant matematical equations that is the language by which nature speaks. Why would nature chose to speak in such a difficult language of mathematics? Or, is it that nature speaks in many different languages, it's only upto the observer to understand it. These are the philosophical questions I love to ruminate about.
+
+**Interests:** Hiking, Travelling, Scientific Computing, Inquiring why things are the way they are.
+
+## Inquiries
+
+[contact me](mailto:).
+:::
