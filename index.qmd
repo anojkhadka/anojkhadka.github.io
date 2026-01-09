@@ -1,8 +1,8 @@
 ---
-title: "About"
-image: Manjushri.jpg
+title: "Home"
+image: MantraGarland.jpg
 about:
-   template: trestles
+   template: jolla
    links:
     - text: GitHub
       icon: github

@@ -1,17 +1,14 @@
-------------------------------------------------------------------------
-
 ---
-title: "About"
+image: anojcherry.jpeg
 format: html
 editor: visual
-
 about:
   template: trestles
-  image: anojcherry.jpg
   links:
     - text: Github 
       icon: github
       url: https://anojkhada.github.com
+comments: false
 ---
 
 Hi, I am Anoj and have special interest in physics, mathematics and computation. Besides academia, I love to walk though the wilderness and explore nature. Don't ask me if I am interested in music, it is in my blood. In this personal website of mine I will write on topics of my above mentioned interests both academic and non-academic.

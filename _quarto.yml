@@ -1,25 +1,23 @@
 project:
   type: website
-  output-dir: docs
 
 website:
-  title: "Anoj Khadka"
   navbar:
-    title: ""
     left:
-      - href: index.qmd
-        text: Home
-      - Computation
-      - About
-      - CV
-  favicon: ""
+      - href: index.qmd 
+        text: Home 
+      - href: about.qmd
+        text: About
+      - text: CV
+        href: cv.qmd
+      - text: Computation
   page-footer:
     center: "Thank you for visiting."
   cookie-consent: true
 
 format:
   html:
-    theme: cosmo
+    theme: minty
     css: styles.css
     toc: true
 
