@@ -1,5 +1,5 @@
 ---
-title: "Anoj Khadka"
+title: "About"
 image: Manjushri.jpg
 about:
    template: trestles
