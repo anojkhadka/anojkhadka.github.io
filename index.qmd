@@ -1,6 +1,6 @@
 ---
 title: "Home"
-image: anojcherry.jpg
+image: whiteflower.jpg
 about:
    template: jolla
    links:
