@@ -1,5 +1,5 @@
 ---
-image: topologyflower.jpeg
+image: images/topologyflower.jpeg
 format: html
 editor: visual
 about:
