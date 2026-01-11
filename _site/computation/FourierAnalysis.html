@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>about</title>
+<title>Signal processing has its root in Fourier Analysis</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,25 +23,26 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/cookie-consent/cookie-consent.js"></script>
-<link href="site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-3c719603cd236b55f0bf3e5d97ebf8cf.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/cookie-consent/cookie-consent.js"></script>
+<link href="../site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-3c719603cd236b55f0bf3e5d97ebf8cf.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -88,11 +89,40 @@ cookieconsent.run({
 </script> 
   
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="styles.css">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -105,15 +135,15 @@ cookieconsent.run({
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" aria-current="page"> 
+    <a class="nav-link" href="../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./cv.html"> 
+    <a class="nav-link" href="../cv.html"> 
 <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -122,7 +152,7 @@ cookieconsent.run({
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-computation">    
         <li>
-    <a class="dropdown-item" href="./computation/FourierAnalysis.html">
+    <a class="dropdown-item" href="../computation/FourierAnalysis.html">
  <span class="dropdown-text">Fourier Analysis</span></a>
   </li>  
     </ul>
@@ -138,30 +168,72 @@ cookieconsent.run({
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
+    </div>
 <!-- main -->
-<div class="quarto-about-trestles">
-  <div class="about-entity">
-    <img src="images/Manjushri.jpg" class="about-image
-  rounded " style="width: 20em;">
-<header id="title-block-header" class="quarto-title-block"></header>
-    <div class="about-links">
-  <a href="https://anojkhada.github.com" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">Github</span>
-  </a>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Signal processing has its root in Fourier Analysis</h1>
 </div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
   </div>
-  <div class="about-contents"><main class="content" id="quarto-document-content">
-<p>Just like the music is written and understood by musicians in a coded language, what is the language with which nature speaks. Physicists claim - nature communicates in a language of elegant matematical equations. Why would nature chose to speak in such a difficult language of mathematics? Or, is it that nature speaks in many different languages, it’s only upto the observer to understand it. These are the philosophical questions I love to ruminate about.</p>
-<p>In short, human civilization is a story of journey into the unknown and this journey into the unknown has sometimes been ispired by curiosity and at times by necessity. I also wonder why things are the way they are. On some dark night, alone in the wilderness, looking up in the sky, do you ever wonder where did this all come from. In the vastness of the universe, I feel helpless, insignificant and hopeless. However, the joy I find in being able to understand miniscule of the vastness of the universe is inspiring.</p>
+  
 
 
-</main></div>
+</header>
+
+
+<p>We use Maclaurin’s series expansion to approximate a function which is continuous and for which the higher order derivative exists. Remember, Maclaurin series is a Taylor’s series of a function expanded at reference point 0. For instance, Maclaurin’s expansion of <span class="math inline">\(sin(x)\)</span> is given by:</p>
+<p><span class="math display">\[sin(x) = x - \frac{x^3}{6} + \frac{x^5}{120}\]</span></p>
+<p>This comes from the Maclaurin’s series expansion of <span class="math inline">\(sin(x)\)</span>.</p>
+<p>Maclaurin’s series expansion is given by:</p>
+<p><span class="math display">\[ f(x) = \sum_{n=0}^{\infty} \frac{f^{n}(0)}{n!}x^n  \]</span></p>
+<p>Higher order derivatives for function <span class="math inline">\(sin(x)\)</span> exists and is a continuous function so it can be approximated to the desired accuracy(provided that required computational resource exists) using Maclaurin’s series expansion. But how would we model a discontinuous function such as one defined below:</p>
+<p><span class="math display">\[f(x) = x\]</span> in the range -2&lt;x&lt;2. Grpahically this function looks as shown below.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="sawtooth.jpg" class="img-fluid figure-img"></p>
+<figcaption>Function Graph</figcaption>
+</figure>
 </div>
- <!-- /main -->
+<p>We can model such discontinuous function using Fourier series given by:</p>
+<p><span class="math display">\[ f(x) = \frac{a_{0}}{2} + \sum_{n=1}^{\infty}\left[ a_{n}Cos\left(\frac{2n\pi x}{L}\right) + b_{n}Sin\left(\frac{2n\pi x}{L}\right) \right]  \]</span></p>
+<p>Refer <a href="https://mathworld.wolfram.com/FourierSeries.html">this source</a> for theoretical aspect of fourier seiries.</p>
+<p>Given function in the example is an odd function so the function can only be modelled with coefficient <span class="math inline">\(b_{n}\)</span> as all the <span class="math inline">\(a_{n}, a_{0}\)</span> coefficient will be zero for odd function. Using Fourier integral for fourier coefficient <span class="math inline">\(b_{n}\)</span> I got the value<br>
+<span class="math display">\[ b_{n} =  \frac{4 (-1)^{n+1}}{n \pi}  \]</span></p>
+<p>Hence, given function will be modelled by the fourier series expression below.</p>
+<p><span class="math display">\[ f(x) = \sum_{n=1}^{\infty} \left[ \frac{4 (-1)^{n+1}}{n \pi} Sin\left(\frac{n \pi x}{2}\right) \right] \]</span></p>
+<p>Using this result we can visualize how given function will be modelled if we take fourier series sum for various number of terms in above series. Below is a graph there shows how the actual function(in blue) will be modelled by fourier series when we take a sum of 1, 5, 25 and 125 terms. As we can see as we approximate with larger and larger number of terms in the series given function is more and more accurately represented.</p>
+<p>This is the power of fourier series that it can be used to model discontinuous function. Discrete fourier transform and fast fourier transform are the successive results that arises on the foundationi of fourier analysis. All modern electronic devices such as cell phones, radio communication, etc use this idea of fast fourier transform in signal processing. Once again, mathematics lies at the base of the beauty of everything.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="fouriermodelling.jpg" class="img-fluid figure-img"></p>
+<figcaption>Fourier Graph</figcaption>
+</figure>
+</div>
+
+
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     
