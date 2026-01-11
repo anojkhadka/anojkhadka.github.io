@@ -1,5 +1,5 @@
 ---
-image: images/topologyflower.jpeg
+image: images/Manjushri.jpg
 format: html
 editor: visual
 about:
