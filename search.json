@@ -7,13 +7,6 @@
     "text": "Just like the music is written and understood by musicians in a coded language, what is the language with which nature speaks. Physicists claim - nature communicates in a language of elegant matematical equations. Why would nature chose to speak in such a difficult language of mathematics? Or, is it that nature speaks in many different languages, it’s only upto the observer to understand it. These are the philosophical questions I love to ruminate about.\nIn short, human civilization is a story of journey into the unknown and this journey into the unknown has sometimes been ispired by curiosity and at times by necessity. I also wonder why things are the way they are. On some dark night, alone in the wilderness, looking up in the sky, do you ever wonder where did this all come from. In the vastness of the universe, I feel helpless, insignificant and hopeless. However, the joy I find in being able to understand miniscule of the vastness of the universe is inspiring."
   },
   {
-    "objectID": "cv.html",
-    "href": "cv.html",
-    "title": "",
-    "section": "",
-    "text": "In case you are interested here is my CV."
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Anoj Khadka",
@@ -21,10 +14,10 @@
     "text": "Hi, I am Anoj and have special interest in physics, mathematics and computation. I am a graduate student in physics department here at West Virginia University. Broadly speaking, I am working on pulsar astronomy. Currently, I am focused on two different research projects. One of them involves searching for pulsars for which I use open source softwares to explore data from various radio telescopes. Parallelly, I also work on new algorithm developments for various aspects of pulsar astronomy. Besides academia, I love to walk through the wilderness and explore nature. Don’t ask me if I am interested in music, it is in my blood. In this personal website of mine I will write on topics of my above mentioned interests, both academic and non-academic. In case you want to contact me, my email is khadkaanoj@gmail.com."
   },
   {
-    "objectID": "computation/FourierAnalysis.html",
-    "href": "computation/FourierAnalysis.html",
-    "title": "Signal processing has its root in Fourier Analysis",
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "",
     "section": "",
-    "text": "We use Maclaurin’s series expansion to approximate a function which is continuous and for which the higher order derivative exists. Remember, Maclaurin series is a Taylor’s series of a function expanded at reference point 0. For instance, Maclaurin’s expansion of \\(sin(x)\\) is given by:\n\\[sin(x) = x - \\frac{x^3}{6} + \\frac{x^5}{120}\\]\nThis comes from the Maclaurin’s series expansion of \\(sin(x)\\).\nMaclaurin’s series expansion is given by:\n\\[ f(x) = \\sum_{n=0}^{\\infty} \\frac{f^{n}(0)}{n!}x^n  \\]\nHigher order derivatives for function \\(sin(x)\\) exists and is a continuous function so it can be approximated to the desired accuracy(provided that required computational resource exists) using Maclaurin’s series expansion. But how would we model a discontinuous function such as one defined below:\n\\[f(x) = x\\] in the range -2&lt;x&lt;2. Grpahically this function looks as shown below.\n\n\n\nFunction Graph\n\n\nWe can model such discontinuous function using Fourier series given by:\n\\[ f(x) = \\frac{a_{0}}{2} + \\sum_{n=1}^{\\infty}\\left[ a_{n}Cos\\left(\\frac{2n\\pi x}{L}\\right) + b_{n}Sin\\left(\\frac{2n\\pi x}{L}\\right) \\right]  \\]\nRefer this source for theoretical aspect of fourier seiries.\nGiven function in the example is an odd function so the function can only be modelled with coefficient \\(b_{n}\\) as all the \\(a_{n}, a_{0}\\) coefficient will be zero for odd function. Using Fourier integral for fourier coefficient \\(b_{n}\\) I got the value\n\\[ b_{n} =  \\frac{4 (-1)^{n+1}}{n \\pi}  \\]\nHence, given function will be modelled by the fourier series expression below.\n\\[ f(x) = \\sum_{n=1}^{\\infty} \\left[ \\frac{4 (-1)^{n+1}}{n \\pi} Sin\\left(\\frac{n \\pi x}{2}\\right) \\right] \\]\nUsing this result we can visualize how given function will be modelled if we take fourier series sum for various number of terms in above series. Below is a graph there shows how the actual function(in blue) will be modelled by fourier series when we take a sum of 1, 5, 25 and 125 terms. As we can see as we approximate with larger and larger number of terms in the series given function is more and more accurately represented.\nThis is the power of fourier series that it can be used to model discontinuous function. Discrete fourier transform and fast fourier transform are the successive results that arises on the foundationi of fourier analysis. All modern electronic devices such as cell phones, radio communication, etc use this idea of fast fourier transform in signal processing. Once again, mathematics lies at the base of the beauty of everything.\n\n\n\nFourier Graph"
+    "text": "In case you are interested here is my CV."
   }
 ]
