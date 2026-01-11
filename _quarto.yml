@@ -10,10 +10,15 @@ website:
         text: About
       - text: CV
         href: cv.qmd
+  
       - text: Computation
         menu:
           - text: "Fourier Analysis"
             href: computation/FourierAnalysis.html
+          - text: "Mandelbrot and Chaos"
+            href: computation/MandelbrotAndChaos.html
+      - text: Physics
+      - text: Philosophy
   page-footer:
     center: "Thank you for visiting."
   cookie-consent: true
