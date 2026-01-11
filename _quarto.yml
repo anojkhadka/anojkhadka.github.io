@@ -11,6 +11,9 @@ website:
       - text: CV
         href: cv.qmd
       - text: Computation
+        menu:
+          - text: "Fourier Analysis"
+            href: computation/FourierAnalysis.html
   page-footer:
     center: "Thank you for visiting."
   cookie-consent: true
