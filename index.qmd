@@ -1,6 +1,6 @@
 ---
 title: "Anoj Khadka"
-image: whiteflower.jpg
+image: anojcherry.jpg
 about:
    template: jolla
    links:
