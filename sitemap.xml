@@ -2,26 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://anojkhadka.github.io/about.html</loc>
-    <lastmod>2026-01-11T04:42:02.993Z</lastmod>
-  </url>
-  <url>
-    <loc>https://anojkhadka.github.io/computation/DiscreteFourierTransform_DFT.html</loc>
-    <lastmod>2026-01-11T05:44:52.989Z</lastmod>
+    <lastmod>2026-01-11T05:47:57.657Z</lastmod>
   </url>
   <url>
     <loc>https://anojkhadka.github.io/computation/FourierAnalysis.html</loc>
-    <lastmod>2026-01-11T04:44:36.968Z</lastmod>
-  </url>
-  <url>
-    <loc>https://anojkhadka.github.io/index.html</loc>
-    <lastmod>2026-01-11T04:42:02.994Z</lastmod>
-  </url>
-  <url>
-    <loc>https://anojkhadka.github.io/computation/MandelbrotAndChaos.html</loc>
-    <lastmod>2026-01-11T05:18:04.080Z</lastmod>
+    <lastmod>2026-01-11T05:47:57.665Z</lastmod>
   </url>
   <url>
     <loc>https://anojkhadka.github.io/cv.html</loc>
-    <lastmod>2026-01-09T05:49:08.453Z</lastmod>
+    <lastmod>2026-01-11T05:47:57.666Z</lastmod>
+  </url>
+  <url>
+    <loc>https://anojkhadka.github.io/index.html</loc>
+    <lastmod>2026-01-11T05:47:57.893Z</lastmod>
+  </url>
+  <url>
+    <loc>https://anojkhadka.github.io/computation/MandelbrotAndChaos.html</loc>
+    <lastmod>2026-01-11T05:47:57.665Z</lastmod>
+  </url>
+  <url>
+    <loc>https://anojkhadka.github.io/computation/DiscreteFourierTransform_DFT.html</loc>
+    <lastmod>2026-01-11T05:47:57.665Z</lastmod>
   </url>
 </urlset>
