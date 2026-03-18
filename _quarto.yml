@@ -25,7 +25,7 @@ website:
       - text: Hobbies
         menu:
           - text: "Hiking Around West Virginia"
-            href: HikingWestVirginia.html
+            href: hobbies/HikingWestVirginia.html
     center: "Thank you for visiting."
   cookie-consent: true
 
