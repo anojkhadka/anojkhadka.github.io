@@ -22,6 +22,7 @@ website:
             href: computation/MandelbrotAndChaos.html
       - text: Physics
       - text: Philosophy
+      - text: Hobbies
   page-footer:
     center: "Thank you for visiting."
   cookie-consent: true
