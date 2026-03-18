@@ -20,41 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -124,35 +89,6 @@ cookieconsent.run({
 </script> 
   
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -210,11 +146,17 @@ window.Quarto = {
 <span class="menu-text">Philosophy</span>
     </span>
   </li>  
-  <li class="nav-item">
-    <span class="nav-link">
-<span class="menu-text">Hobbies</span>
-    </span>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-hobbies" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Hobbies</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-hobbies">    
+        <li>
+    <a class="dropdown-item" href="../HikingWestVirginia.html">
+ <span class="dropdown-text">Hiking Around West Virginia</span></a>
   </li>  
+    </ul>
+  </li>
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -231,7 +173,7 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#mandelbrot-set" id="toc-mandelbrot-set" class="nav-link active" data-scroll-target="#mandelbrot-set">Mandelbrot Set</a></li>
+  <li><a href="#hiking-around-west-virginia-state-in-us" id="toc-hiking-around-west-virginia-state-in-us" class="nav-link active" data-scroll-target="#hiking-around-west-virginia-state-in-us"><font color="green">Hiking around West Virginia state in US</font></a></li>
   </ul>
 </nav>
     </div>
@@ -241,63 +183,9 @@ window.Quarto = {
 
 
 
-<section id="mandelbrot-set" class="level3">
-<h3 class="anchored" data-anchor-id="mandelbrot-set">Mandelbrot Set</h3>
-<p>Mandelbrot set is a set of complex numbers that obey certain mathematical rule. First studied by Robert Brooks and Peter Matelski and visualized by Benoit Mandelbrot while woking in IBM, it represents the complexity and has many applications in the study of chaos theory, number theory, fractal geometry, etc. Mathematically, it is defined by a simple function:</p>
-<p><span class="math display">\[x_{n} = x_{0}^2 + c  \]</span></p>
-<p>where ‘c’ is a set of complex numbers and ‘<span class="math inline">\(x_{0}\)</span>’ is 0. This set of such complex numbers for which the functional value defined above does not diverge even at infinity, comprises a Mandelbrot set. Starting with <span class="math inline">\(x_{0} = 0\)</span> and any complex number ’c` we keep summing up the numbers iteratively as:</p>
-<p><span class="math display">\[ x_{1} = 0 + c \]</span> <span class="math display">\[ x_{2} = x_{1}^2 + c \]</span> <span class="math display">\[ x_{3} = x_{2}^2 + c \]</span> <span class="math display">\[..........\]</span> <span class="math display">\[..........\]</span> <span class="math display">\[..........\]</span></p>
-<p><span class="math display">\[ x_{n} = x_{n-1}^2 + c \]</span></p>
-<p>Even when we take this sum to infinity, if the sum does not diverge from the complex number ‘c’, the number belongs to a Mandelbrot set. Here the <span class="math inline">\(x_{0}\)</span> is called a seed and the summation orbit of the seed. So, Mandelbrot set is a set of these complex numbers for which the orbit of the seed 0 does not diverge to infinity.</p>
-<p>When we make a plot of Mandelbrot set, it gives rise to form a beautiful looking design pattern as shown below. Generally, we use complex nubers <span class="math inline">\(z = x + iy\)</span> within x and y values ranging in between (-2,2). It has been derived mathematically that this series will converge below a radius of 2 when seed is 0 for given set of complex numbers in above range of x and y values. So, we use this radius as a braking/limiting condition for our iteration loop.</p>
-<div id="32f45cb8-ba93-4669-84fa-f98ac900b213" class="cell" data-execution_count="7">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> mandelbrot_set(lower_limit, upper_limit, total_number, max_iteration):</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="co">""" This function will first create a 2-D array of zeros. We then create complex numbers within a complex plane with x and y </span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">    values ranging between (-1.5, 1.5). These complex numbers are each tested to see if iterative sum exceeds the radius of </span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">    convergence value 2 when seed of 0 is taken. If value diverge we change that complex number in the complex plane to 1.</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">    Finally a plot of these 2-D matrix set is created to visualize the mandelbrot set. One can tweak the seed value and range of</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">    complex numbers taken just to see how the graph changes."""</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    blank_set <span class="op">=</span> np.zeros((total_number,total_number))</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    number_sample <span class="op">=</span> np.linspace(lower_limit, upper_limit, total_number)</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> n1 <span class="kw">in</span> <span class="bu">range</span>(total_number):</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>        x <span class="op">=</span> number_sample[n1]</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> n2 <span class="kw">in</span> <span class="bu">range</span>(total_number):</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>            y <span class="op">=</span> number_sample[n2]</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>            c <span class="op">=</span> <span class="bu">complex</span>(x,y)                              <span class="co"># Complex number to test</span></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>            z <span class="op">=</span> <span class="dv">0</span>                                         <span class="co"># Seed number</span></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>            <span class="cf">for</span> k <span class="kw">in</span> <span class="bu">range</span>(max_iteration):</span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>                z <span class="op">=</span> z<span class="op">**</span><span class="dv">2</span> <span class="op">+</span> c</span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>                <span class="cf">if</span> <span class="bu">abs</span>(z) <span class="op">&gt;</span> <span class="dv">2</span>:</span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>                    blank_set[n1,n2] <span class="op">=</span> <span class="dv">1</span></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>                    <span class="cf">break</span></span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> blank_set</span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> mandelbrot_graph(mandel_set):</span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>    plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>,<span class="dv">12</span>))</span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>    plt.imshow(mandel_set, extent<span class="op">=</span>(<span class="op">-</span><span class="fl">2.0</span>, <span class="fl">2.0</span>, <span class="op">-</span><span class="fl">2.0</span>, <span class="fl">2.0</span>))</span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> main():</span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>    result1 <span class="op">=</span> mandelbrot_set(<span class="op">-</span><span class="fl">1.5</span>, <span class="fl">1.5</span>,<span class="dv">1024</span>,<span class="dv">300</span>)</span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>    result2 <span class="op">=</span> mandelbrot_graph(result1)</span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">"__main__"</span>:</span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>    main()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="HikingWestVirginia_files/figure-html/cell-3-output-1.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-</div>
-</div>
-<p>Reference:</p>
-<p>https://math.bu.edu/DYSYS/FRACGEOM/FRACGEOM.html</p>
+<section id="hiking-around-west-virginia-state-in-us" class="level3">
+<h3 class="anchored" data-anchor-id="hiking-around-west-virginia-state-in-us"><font color="green">Hiking around West Virginia state in US</font></h3>
+<p>In this section, I will be posting my hiking experience around mountain state of West Virginia in United States that has lots of hiking trails on Appalachian mountains. Stay tuned.</p>
 
 
 </section>
@@ -710,7 +598,7 @@ window.Quarto = {
       &nbsp;
     </div>   
     <div class="nav-footer-center">
-<p>Thank you for visiting.</p>
+
 <div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
     <div class="nav-footer-right">
       &nbsp;

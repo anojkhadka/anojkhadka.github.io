@@ -23,7 +23,9 @@ website:
       - text: Physics
       - text: Philosophy
       - text: Hobbies
-  page-footer:
+        menu:
+          - text: "Hiking Around West Virginia"
+            href: HikingWestVirginia.html
     center: "Thank you for visiting."
   cookie-consent: true
 
