@@ -1,0 +1,55 @@
+Follow these followings steps serially to update or make changes in website.
+
+Step 1:
+Go to the directory where your site directory is located: 
+
+Step 2:
+
+Connect to remote github directory where you site is hosted via this command below.
+
+"ssh-add ~/.ssh/id_ed25519"
+
+You will be asked passphrase. In my case it is my laptop password.
+
+Step 3:
+
+Make any changes or editing in your websites via quarto project in Vs code.
+
+Step 4:
+
+Use the command below to render the changes.
+
+"quarto render"
+
+Step 5:
+
+Print this command below.
+
+"git status"
+
+Step 6:
+
+Next use this command below. 
+
+"git add -A"
+
+Step 7:
+
+Use this next command below.
+
+"git commit -m "commit message"
+
+Step 8
+
+Push the commit to original branch
+
+"git push origin master"
+
+Step 9
+
+If above push does not work try 
+
+"git push origin --force"
+
+Note: It may take few minutes for updates to take effect. Or close the currently opened website and re-open it again in
+the new tab to see changes taking effect. 
