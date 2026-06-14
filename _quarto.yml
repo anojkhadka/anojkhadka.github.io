@@ -23,7 +23,7 @@ website:
       - text: Physics
         menu:
           - text: "Reviews and Articles"
-            href: BookReviews.md
+            href: physics/BookReviews.md
       - text: Philosophy
       - text: Hobbies
         menu:
