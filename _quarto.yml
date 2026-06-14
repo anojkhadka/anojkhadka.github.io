@@ -21,6 +21,9 @@ website:
           - text: "Mandelbrot and Chaos"
             href: computation/MandelbrotAndChaos.html
       - text: Physics
+        menu:
+          - text: "Reviews and Articles"
+            href: BookReviews.md
       - text: Philosophy
       - text: Hobbies
         menu:
