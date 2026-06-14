@@ -22,7 +22,7 @@ website:
             href: computation/MandelbrotAndChaos.html
       - text: Physics
         menu:
-          - text: "Reviews and Articles"
+          - text: "Book Reviews"
             href: physics/BookReviews.md
       - text: Philosophy
       - text: Hobbies
