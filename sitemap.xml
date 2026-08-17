@@ -2,34 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://anojkhadka.github.io/physics/BookReviews.html</loc>
-    <lastmod>2026-08-17T03:45:11.781Z</lastmod>
+    <lastmod>2026-08-17T03:58:45.594Z</lastmod>
   </url>
   <url>
-    <loc>https://anojkhadka.github.io/hobbies/HikingWestVirginia.html</loc>
-    <lastmod>2026-08-17T03:45:11.652Z</lastmod>
-  </url>
-  <url>
-    <loc>https://anojkhadka.github.io/computation/DiscreteFourierTransform_DFT.html</loc>
-    <lastmod>2026-08-17T03:45:11.550Z</lastmod>
-  </url>
-  <url>
-    <loc>https://anojkhadka.github.io/about.html</loc>
-    <lastmod>2026-08-17T03:45:11.545Z</lastmod>
-  </url>
-  <url>
-    <loc>https://anojkhadka.github.io/cv.html</loc>
-    <lastmod>2026-08-17T03:45:11.551Z</lastmod>
-  </url>
-  <url>
-    <loc>https://anojkhadka.github.io/computation/FourierAnalysis.html</loc>
-    <lastmod>2026-08-17T03:45:11.550Z</lastmod>
+    <loc>https://anojkhadka.github.io/hobbies/spruceknobhike.html</loc>
+    <lastmod>2026-08-17T03:58:45.482Z</lastmod>
   </url>
   <url>
     <loc>https://anojkhadka.github.io/computation/MandelbrotAndChaos.html</loc>
-    <lastmod>2026-08-17T03:45:11.551Z</lastmod>
+    <lastmod>2026-08-17T03:58:45.384Z</lastmod>
+  </url>
+  <url>
+    <loc>https://anojkhadka.github.io/computation/FourierAnalysis.html</loc>
+    <lastmod>2026-08-17T03:58:45.384Z</lastmod>
+  </url>
+  <url>
+    <loc>https://anojkhadka.github.io/cv.html</loc>
+    <lastmod>2026-08-17T03:58:45.385Z</lastmod>
+  </url>
+  <url>
+    <loc>https://anojkhadka.github.io/about.html</loc>
+    <lastmod>2026-08-17T03:58:45.379Z</lastmod>
+  </url>
+  <url>
+    <loc>https://anojkhadka.github.io/computation/DiscreteFourierTransform_DFT.html</loc>
+    <lastmod>2026-08-17T03:58:45.384Z</lastmod>
+  </url>
+  <url>
+    <loc>https://anojkhadka.github.io/hobbies/HikingWestVirginia.html</loc>
+    <lastmod>2026-08-17T03:58:45.482Z</lastmod>
   </url>
   <url>
     <loc>https://anojkhadka.github.io/index.html</loc>
-    <lastmod>2026-08-17T03:45:11.777Z</lastmod>
+    <lastmod>2026-08-17T03:58:45.591Z</lastmod>
   </url>
 </urlset>
