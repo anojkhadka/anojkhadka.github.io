@@ -27,8 +27,8 @@ website:
       - text: Philosophy
       - text: Hobbies
         menu:
-          - text: "Hiking Around West Virginia"
-            href: hobbies/HikingWestVirginia.html
+          - text: "Hiking"
+            href: hobbies/Hiking.html
     center: "Thank you for visiting."
   cookie-consent: true
 
