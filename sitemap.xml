@@ -2,34 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://anojkhadka.github.io/physics/BookReviews.html</loc>
-    <lastmod>2026-08-17T04:47:09.780Z</lastmod>
+    <lastmod>2026-08-17T04:50:39.083Z</lastmod>
   </url>
   <url>
     <loc>https://anojkhadka.github.io/hobbies/Hiking.html</loc>
-    <lastmod>2026-08-17T04:47:09.625Z</lastmod>
-  </url>
-  <url>
-    <loc>https://anojkhadka.github.io/computation/DiscreteFourierTransform_DFT.html</loc>
-    <lastmod>2026-08-17T04:47:09.498Z</lastmod>
-  </url>
-  <url>
-    <loc>https://anojkhadka.github.io/about.html</loc>
-    <lastmod>2026-08-17T04:47:09.492Z</lastmod>
-  </url>
-  <url>
-    <loc>https://anojkhadka.github.io/cv.html</loc>
-    <lastmod>2026-08-17T04:47:09.500Z</lastmod>
-  </url>
-  <url>
-    <loc>https://anojkhadka.github.io/computation/FourierAnalysis.html</loc>
-    <lastmod>2026-08-17T04:47:09.498Z</lastmod>
+    <lastmod>2026-08-17T04:50:38.970Z</lastmod>
   </url>
   <url>
     <loc>https://anojkhadka.github.io/computation/MandelbrotAndChaos.html</loc>
-    <lastmod>2026-08-17T04:47:09.499Z</lastmod>
+    <lastmod>2026-08-17T04:50:38.871Z</lastmod>
+  </url>
+  <url>
+    <loc>https://anojkhadka.github.io/computation/FourierAnalysis.html</loc>
+    <lastmod>2026-08-17T04:50:38.870Z</lastmod>
+  </url>
+  <url>
+    <loc>https://anojkhadka.github.io/cv.html</loc>
+    <lastmod>2026-08-17T04:50:38.871Z</lastmod>
+  </url>
+  <url>
+    <loc>https://anojkhadka.github.io/about.html</loc>
+    <lastmod>2026-08-17T04:50:38.865Z</lastmod>
+  </url>
+  <url>
+    <loc>https://anojkhadka.github.io/computation/DiscreteFourierTransform_DFT.html</loc>
+    <lastmod>2026-08-17T04:50:38.870Z</lastmod>
+  </url>
+  <url>
+    <loc>https://anojkhadka.github.io/hobbies/HikingWestVirginia.html</loc>
+    <lastmod>2026-08-17T04:50:38.970Z</lastmod>
   </url>
   <url>
     <loc>https://anojkhadka.github.io/index.html</loc>
-    <lastmod>2026-08-17T04:47:09.777Z</lastmod>
+    <lastmod>2026-08-17T04:50:39.079Z</lastmod>
   </url>
 </urlset>
