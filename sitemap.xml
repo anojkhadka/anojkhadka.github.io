@@ -2,42 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://anojkhadka.github.io/physics/BookReviews.html</loc>
-    <lastmod>2026-08-17T04:35:24.800Z</lastmod>
-  </url>
-  <url>
-    <loc>https://anojkhadka.github.io/hobbies/spruceknobhike.html</loc>
-    <lastmod>2026-08-17T04:35:24.682Z</lastmod>
-  </url>
-  <url>
-    <loc>https://anojkhadka.github.io/hobbies/HikingWestVirginia.html</loc>
-    <lastmod>2026-08-17T04:35:24.672Z</lastmod>
-  </url>
-  <url>
-    <loc>https://anojkhadka.github.io/computation/DiscreteFourierTransform_DFT.html</loc>
-    <lastmod>2026-08-17T04:35:24.570Z</lastmod>
-  </url>
-  <url>
-    <loc>https://anojkhadka.github.io/about.html</loc>
-    <lastmod>2026-08-17T04:35:24.564Z</lastmod>
-  </url>
-  <url>
-    <loc>https://anojkhadka.github.io/cv.html</loc>
-    <lastmod>2026-08-17T04:35:24.572Z</lastmod>
-  </url>
-  <url>
-    <loc>https://anojkhadka.github.io/computation/FourierAnalysis.html</loc>
-    <lastmod>2026-08-17T04:35:24.571Z</lastmod>
-  </url>
-  <url>
-    <loc>https://anojkhadka.github.io/computation/MandelbrotAndChaos.html</loc>
-    <lastmod>2026-08-17T04:35:24.571Z</lastmod>
+    <lastmod>2026-08-17T04:39:11.305Z</lastmod>
   </url>
   <url>
     <loc>https://anojkhadka.github.io/hobbies/Hiking.html</loc>
-    <lastmod>2026-08-17T04:35:24.672Z</lastmod>
+    <lastmod>2026-08-17T04:39:11.187Z</lastmod>
+  </url>
+  <url>
+    <loc>https://anojkhadka.github.io/computation/MandelbrotAndChaos.html</loc>
+    <lastmod>2026-08-17T04:39:11.085Z</lastmod>
+  </url>
+  <url>
+    <loc>https://anojkhadka.github.io/computation/FourierAnalysis.html</loc>
+    <lastmod>2026-08-17T04:39:11.085Z</lastmod>
+  </url>
+  <url>
+    <loc>https://anojkhadka.github.io/cv.html</loc>
+    <lastmod>2026-08-17T04:39:11.086Z</lastmod>
+  </url>
+  <url>
+    <loc>https://anojkhadka.github.io/about.html</loc>
+    <lastmod>2026-08-17T04:39:11.079Z</lastmod>
+  </url>
+  <url>
+    <loc>https://anojkhadka.github.io/computation/DiscreteFourierTransform_DFT.html</loc>
+    <lastmod>2026-08-17T04:39:11.085Z</lastmod>
+  </url>
+  <url>
+    <loc>https://anojkhadka.github.io/hobbies/HikingWestVirginia.html</loc>
+    <lastmod>2026-08-17T04:39:11.187Z</lastmod>
   </url>
   <url>
     <loc>https://anojkhadka.github.io/index.html</loc>
-    <lastmod>2026-08-17T04:35:24.797Z</lastmod>
+    <lastmod>2026-08-17T04:39:11.302Z</lastmod>
   </url>
 </urlset>
