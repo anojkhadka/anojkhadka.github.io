@@ -208,9 +208,9 @@ cookieconsent.run({
 }
 
 #my-slideshow {
-  width: 500px;
+  width: 100%;
   opacity: 1;
-  transition: opacity 1.5s ease-in-out;
+  transition: opacity 5.0s ease-in-out;
 }
 
 #my-caption {
@@ -218,7 +218,7 @@ cookieconsent.run({
   font-style: italic;
   color: #090;
   opacity: 1;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 5.0s ease-in-out;
 }
 </style>
 <div class="slideshow-container">
@@ -230,11 +230,11 @@ Mountains as seen from Spruce knob.
 <script>
 const slides = [
   {
-    image: "spruce1.jpg",
+    image: "spruce2.jpg",
     caption: "Mountains as seen from Spruce knob."
   },
   {
-    image: "spruce1.jpg",
+    image: "spruce3.jpg",
     caption: "Mountains as seen from Spruce knob."
   }
 ];
@@ -266,7 +266,7 @@ setInterval(() => {
     img.style.opacity = 1;
     caption.style.opacity = 1;
 
-  }, 500);
+  }, 5000);
 
 }, 5000);
 </script>
