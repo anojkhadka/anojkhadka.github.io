@@ -47,7 +47,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-2db36382ff22ed03cd4e20ef72a84170.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-4404fc44ce39540de2993f3ab3e0ab5d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -215,7 +215,7 @@ cookieconsent.run({
 #my-slideshow {
   width: 100%;
   opacity: 1;
-  transition: opacity 1.0s ease-in-out;
+  transition: opacity 1s ease-in-out;
 }
 
 #my-caption {
@@ -223,57 +223,59 @@ cookieconsent.run({
   font-style: italic;
   color: #090;
   opacity: 1;
-  transition: opacity 1.0s ease-in-out;
+  transition: opacity 1s ease-in-out;
 }
 </style>
 <div class="slideshow-container">
-<img id="my-slideshow" src="spruce1.jpg">
+<img id="my-slideshow" src="spruce1.jpg" alt="Mountains as seen from Spruce Knob">
 <div id="my-caption">
-Mountains as seen from Spruce knob.
+Mountains as seen from Spruce Knob.
 </div>
 </div>
 <script>
 const slides = [
   {
+    image: "spruce1.jpg",
+    caption: "Mountains as seen from Spruce Knob."
+  },
+  {
     image: "spruce2.jpg",
-    caption: "Mountains as seen from Spruce knob."
+    caption: "Mountains as seen from Spruce Knob."
   },
   {
     image: "spruce3.jpg",
-    caption: "Mountains as seen from Spruce knob."
+    caption: "Mountains as seen from Spruce Knob."
   }
 ];
 
-// Preload images
-slides.forEach(slide => {
-  const img = new Image();
-  img.src = slide.image;
-});
-
 let current = 0;
 
-setInterval(() => {
+function nextSlide() {
   const img = document.getElementById("my-slideshow");
   const caption = document.getElementById("my-caption");
 
   // Fade out
-  img.style.opacity = 0;
-  caption.style.opacity = 0;
+  img.style.opacity = "0";
+  caption.style.opacity = "0";
 
-  setTimeout(() => {
-    current = (current + 1) % slides.length;
+  setTimeout(function() {
+    current++;
 
-    // Change image and caption
+    if (current >= slides.length) {
+      current = 0;
+    }
+
     img.src = slides[current].image;
     caption.textContent = slides[current].caption;
 
     // Fade in
-    img.style.opacity = 1;
-    caption.style.opacity = 1;
+    img.style.opacity = "1";
+    caption.style.opacity = "1";
 
   }, 1000);
+}
 
-}, 5000);
+setInterval(nextSlide, 5000);
 </script>
 <p>There are couple of picnic spots and also an observation tower at Spruce knob but the tower no longer remains the vantage point to observe around due to the grown trees that block the view. Another interesting feature I observed there was how the rocks from the glacial age are segregated, probably due to how far glacier managed to flow. Another interesting feature visible, if you are look carefully, is how the branches of the trees are tilted towards the direction of the windflow. If you want to explore more, there is a spruce knob lake nearby. Strolling around the shores of lake is a healing experience looking around the wild and wonderful forest around. There are plenty of camping areas and cabins spread out all over for people willing to stay longer.</p>
 <div class="quarto-figure quarto-figure-center">
