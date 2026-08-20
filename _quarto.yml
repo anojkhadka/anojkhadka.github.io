@@ -34,7 +34,7 @@ website:
 
 format:
   html:
-    theme: minty
+    theme: pinky
     css: styles.css
     toc: true
 
